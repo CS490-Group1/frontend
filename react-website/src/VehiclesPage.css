@@ -1,0 +1,78 @@
+/* VehiclesPage.css */
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.vehicles-container {
+	display: flex;
+	height: calc(
+		100vh - 81px
+	); /* Set the height to the full viewport minus the navbar height */
+	padding-top: 10px; /* 10px below the navbar */
+}
+
+.filter-div {
+	width: 25%;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #d8c3a5;
+	border-radius: 10px; /* Rounded corners */
+	margin-right: 10px; /* Gap between the divs */
+}
+
+.filter-div h2 {
+	margin-bottom: 20px;
+}
+
+.filter-div form {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-div label {
+	margin-bottom: 10px;
+}
+
+.filter-div select,
+.filter-div input {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.vehicles-div {
+	width: 75%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #d8c3a5;
+	border-radius: 10px; /* Rounded corners */
+	overflow-y: auto; /* Scroll down in the div */
+}
+
+.vehicle-card {
+	width: calc((100% / 3) - 40px);
+	margin-bottom: 20px;
+	background-color: #eae7dc;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.vehicle-card img {
+	width: 100%;
+	height: auto;
+}
+
+.vehicle-card h3 {
+	margin: 10px 0;
+}
+
+.vehicle-card p {
+	margin-bottom: 10px;
+}
