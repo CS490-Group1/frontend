@@ -1,0 +1,51 @@
+/* LandingPage.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+.container {
+	display: flex;
+	height: calc(100vh - 81px);
+}
+
+.left-div {
+	color: #e85a4f;
+	width: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: "Inter", sans-serif;
+}
+
+.left-div h1 {
+	font-size: 3em;
+	font-weight: 1000;
+}
+
+.right-div {
+	width: 50%;
+	padding: 20px;
+}
+
+.right-div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #e85a4f;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 200px;
+	transition: 0.25s;
+}
+
+button:hover {
+	background-color: #d8c3a5;
+}
