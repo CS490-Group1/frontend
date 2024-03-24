@@ -94,36 +94,7 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-._00Landing__00Landing .ImageFrame .RegisterFrame {
-	position: absolute;
-	right: 0.369873046875px;
-	bottom: 10px;
-	width: 200px;
-	height: 54px;
-	display: flex;
-	padding-top: 25px;
-	padding-right: 32px;
-	padding-bottom: 25px;
-	padding-left: 32px;
-	box-sizing: border-box;
-	justify-content: space-between;
-	align-items: center;
-	background: rgba(234, 231, 220, 1);
-	border-radius: 60px;
-}
-._00Landing__00Landing .ImageFrame .RegisterFrame .RegisterText {
-	position: relative;
-	flex: none;
-	width: 96px;
-	height: 24px;
-	display: flex;
-	align-items: center;
-	color: rgba(232, 90, 79, 1);
-	font-family: Work Sans;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 24px;
-}
+
 ._00Landing__00Landing .ImageFrame .LogInFrame {
 	position: absolute;
 	right: 205px;
@@ -139,5 +110,22 @@
 	justify-content: space-between;
 	align-items: center;
 	background: rgba(232, 90, 79, 1);
+	border-radius: 60px;
+}
+._00Landing__00Landing .ImageFrame .RegisterFrame {
+	position: absolute;
+	right: 0.369873046875px;
+	bottom: 10px;
+	width: 200px;
+	height: 54px;
+	display: flex;
+	padding-top: 25px;
+	padding-right: 32px;
+	padding-bottom: 25px;
+	padding-left: 32px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(234, 231, 220, 1);
 	border-radius: 60px;
 }

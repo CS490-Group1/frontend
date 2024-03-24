@@ -126,6 +126,7 @@ body.active-modal {
 
 	&:hover {
 		color: #565553;
+		cursor: pointer;
 	}
 
 	&:active {

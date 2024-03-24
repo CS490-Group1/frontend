@@ -23,11 +23,11 @@ export default function LoginPopUp() {
 						<head className="modal-header">
 							<h2>Log In</h2>
 						</head>
-						<div className="loginForm">
+						<form className="loginForm">
 							<input type="text" placeholder="Email" />
 							<input type="password" placeholder="Password" />
 							<button className="loginBtn">Log In</button>
-						</div>
+						</form>
 						<div className="close-modal" onClick={toggleModal}>
 							<FontAwesomeIcon icon={faRectangleXmark} size="xl" />
 						</div>
