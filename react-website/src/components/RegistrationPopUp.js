@@ -1,9 +1,9 @@
 import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import "./LoginPopUp.css";
+import "./RegistrationPopUp.css";
 
-export default function LoginPopUp() {
+export default function RegistrationPopUp() {
 	const [modal, setModal] = useState(false);
 	const toggleModal = () => {
 		setModal(!modal);
@@ -12,7 +12,7 @@ export default function LoginPopUp() {
 	return (
 		<>
 			<button onClick={toggleModal} className="btn-modal">
-				Log In
+				Register
 			</button>
 
 			{modal && (
@@ -21,12 +21,19 @@ export default function LoginPopUp() {
 
 					<div className="modal-content">
 						<head className="modal-header">
-							<h2>Logging In</h2>
+							<h2>Create Account</h2>
 						</head>
-						<div className="loginForm">
-							<input type="text" placeholder="Email"></input>
-							<input type="password" placeholder="Password"></input>
-							<button className="loginBtn">Log In</button>
+						<div className="registrationForm">
+							<input type="text" placeholder="First Name" />
+							<input type="text" placeholder="Last Name" />
+							<input
+								type="text"
+								placeholder="Date Of Birth (MM/DD/YYYY)"
+								onfocus="(this.type = 'date')"
+							/>
+							<input type="text" placeholder="Email" />
+							<input type="password" placeholder="Password" />
+							<button className="registerBtn">Register</button>
 						</div>
 						<div className="close-modal" onClick={toggleModal}>
 							<FontAwesomeIcon icon={faRectangleXmark} size="xl" />
