@@ -1,0 +1,102 @@
+body.active-modal {
+	overflow-y: hidden;
+}
+
+.btn-modal {
+	padding: 10px 20px;
+	position: absolute;
+	margin: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 200px;
+	height: 54px;
+	display: flex;
+	border-radius: 60px;
+	align-items: center;
+	justify-content: center;
+	color: rgba(234, 231, 220, 1);
+	font-family: Work Sans;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.modal,
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+}
+
+.overlay {
+	background: rgba(49, 49, 49, 0.8);
+}
+.modal-content {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 1.4;
+	background: #d8c3a5;
+	padding: 14px 28px;
+	border-radius: 30px;
+	max-width: 600px;
+	min-width: 300px;
+}
+
+.loginForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.loginForm input {
+	background-color: #eae7dc;
+	width: 80%;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 100px;
+	border: 1px solid
+		rgba(142.00000673532486, 141.0000067949295, 138.00000697374344, 1);
+	box-sizing: border-box;
+	align-items: center;
+	color: rgba(232, 90, 79, 1);
+	font-size: 15px;
+
+	&:focus {
+		outline: solid 0 transparent;
+		border-color: rgba(232, 90, 79, 1);
+	}
+
+	&::placeholder {
+		font-family: Inter;
+		color: rgba(232, 90, 79, 1);
+		font-weight: 400;
+		font-size: 15px;
+	}
+}
+
+.loginBtn {
+	font-family: Inter;
+	border-radius: 100px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	width: auto;
+}
+
+.close-modal {
+	font-family: Inter;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: -10px;
+	right: 15px;
+	padding: 3px;
+}
