@@ -1,7 +1,4 @@
-import {
-	faCircleXmark,
-	faRectangleXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./LoginPopUp.css";
@@ -39,7 +36,9 @@ export default function LoginPopUp() {
 						<div className="close-modal" onClick={toggleModal}>
 							<FontAwesomeIcon icon={faRectangleXmark} size="xl" />
 						</div>
-						{/* <button className="close-modal" onClick={toggleModal}>
+
+						{/* Alternative Close Button:
+						<button className="close-modal" onClick={toggleModal}>
 							X
 						</button> */}
 					</div>
