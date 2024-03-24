@@ -21,7 +21,7 @@ export default function LoginPopUp() {
 
 					<div className="modal-content">
 						<head className="modal-header">
-							<h2>Logging In</h2>
+							<h2>Log In</h2>
 						</head>
 						<div className="loginForm">
 							<input type="text" placeholder="Email" />
