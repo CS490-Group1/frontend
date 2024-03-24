@@ -24,8 +24,8 @@ export default function LoginPopUp() {
 							<h2>Logging In</h2>
 						</head>
 						<div className="loginForm">
-							<input type="text" placeholder="Email"></input>
-							<input type="password" placeholder="Password"></input>
+							<input type="text" placeholder="Email" />
+							<input type="password" placeholder="Password" />
 							<button className="loginBtn">Log In</button>
 						</div>
 						<div className="close-modal" onClick={toggleModal}>
