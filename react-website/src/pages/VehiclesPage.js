@@ -2,12 +2,12 @@
 import React from "react";
 import "./VehiclesPage.css"; // Import the CSS file
 // Import your car images
-import carImage1 from "./cars/car1.png";
-import carImage2 from "./cars/car2.png";
-import carImage3 from "./cars/car3.png";
-import carImage4 from "./cars/car4.png";
-import carImage5 from "./cars/car5.png";
-import carImage6 from "./cars/car6.png";
+import carImage1 from "../cars/car1.png";
+import carImage2 from "../cars/car2.png";
+import carImage3 from "../cars/car3.png";
+import carImage4 from "../cars/car4.png";
+import carImage5 from "../cars/car5.png";
+import carImage6 from "../cars/car6.png";
 
 const VehiclesPage = () => {
 	// Hardcoded data for 6 cars

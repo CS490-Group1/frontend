@@ -1,8 +1,8 @@
-// LandingPage.js
+// HomePage.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./LandingPage.css";
-import carImage from "./car.png";
+import carImage from "../cars/car.png";
+import "./HomePage.css";
 
 const LandingPage = () => {
 	return (
