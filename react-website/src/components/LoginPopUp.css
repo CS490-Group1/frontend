@@ -19,6 +19,10 @@ body.active-modal {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 24px;
+
+	&:hover {
+		background-color: #565553;
+	}
 }
 
 .modal,
@@ -43,9 +47,24 @@ body.active-modal {
 	line-height: 1.4;
 	background: #d8c3a5;
 	padding: 14px 28px;
-	border-radius: 30px;
+	border-radius: 5px;
 	max-width: 600px;
 	min-width: 300px;
+}
+.modal-header {
+	font-family: Inter;
+	padding: 0;
+	color: white;
+	background-color: #e85a4f;
+	font-size: large;
+	display: inline-block;
+	inline-size: 118.8%;
+	margin-top: -5%;
+	margin-left: -9.3%;
+	border-radius: 5px;
+	position: relative;
+	justify-content: center;
+	text-align: center;
 }
 
 .loginForm {
@@ -60,22 +79,22 @@ body.active-modal {
 	width: 80%;
 	padding: 10px;
 	margin: 10px;
-	border-radius: 100px;
+	border-radius: 5px;
 	border: 1px solid
 		rgba(142.00000673532486, 141.0000067949295, 138.00000697374344, 1);
 	box-sizing: border-box;
 	align-items: center;
-	color: rgba(232, 90, 79, 1);
+	color: #e85a4f;
 	font-size: 15px;
 
 	&:focus {
 		outline: solid 0 transparent;
-		border-color: rgba(232, 90, 79, 1);
+		border-color: #e85a4f;
 	}
 
 	&::placeholder {
 		font-family: Inter;
-		color: rgba(232, 90, 79, 1);
+		color: #e85a4f;
 		font-weight: 400;
 		font-size: 15px;
 	}
@@ -87,16 +106,29 @@ body.active-modal {
 	margin-bottom: 20px;
 	font-size: 15px;
 	width: auto;
+
+	&:hover {
+		background-color: #565553;
+	}
+
+	&:active {
+		background-color: #d8c3a5;
+	}
 }
 
 .close-modal {
-	font-family: Inter;
-	height: 25px;
-	width: 25px;
 	position: absolute;
 	justify-content: center;
 	align-items: center;
-	top: -10px;
+	top: 10px;
 	right: 15px;
-	padding: 3px;
+	color: white;
+
+	&:hover {
+		color: #565553;
+	}
+
+	&:active {
+		color: #d8c3a5;
+	}
 }

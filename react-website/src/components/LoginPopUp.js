@@ -1,7 +1,12 @@
+import {
+	faCircleXmark,
+	faRectangleXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./LoginPopUp.css";
 
-export default function Modal() {
+export default function LoginPopUp() {
 	const [modal, setModal] = useState(false);
 
 	const toggleModal = () => {
@@ -17,7 +22,11 @@ export default function Modal() {
 			{modal && (
 				<div className="modal">
 					<div onClick={toggleModal} className="overlay"></div>
+
 					<div className="modal-content">
+						<head className="modal-header">
+							<h2>Logging In</h2>
+						</head>
 						<div className="loginForm">
 							<input
 								className="emailInput"
@@ -27,9 +36,12 @@ export default function Modal() {
 							<input type="text" placeholder="Password"></input>
 							<button className="loginBtn">Log In</button>
 						</div>
-						<button className="close-modal" onClick={toggleModal}>
+						<div className="close-modal" onClick={toggleModal}>
+							<FontAwesomeIcon icon={faRectangleXmark} size="xl" />
+						</div>
+						{/* <button className="close-modal" onClick={toggleModal}>
 							X
-						</button>
+						</button> */}
 					</div>
 				</div>
 			)}
