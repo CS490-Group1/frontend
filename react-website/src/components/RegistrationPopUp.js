@@ -5,8 +5,9 @@ import "./RegistrationPopUp.css";
 
 export default function RegistrationPopUp() {
 	const [modal, setModal] = useState(false);
-	const toggleModal = () => {
+	const toggleModal = (e) => {
 		setModal(!modal);
+		e.stopPropagation();
 	};
 
 	return (
@@ -20,9 +21,9 @@ export default function RegistrationPopUp() {
 					<div onClick={toggleModal} className="overlay2"></div>
 
 					<div className="modal-content">
-						<head className="modal-header">
+						<div className="modal-header">
 							<h2>Create Account</h2>
-						</head>
+						</div>
 						<form className="registrationForm">
 							<input type="text" placeholder="First Name" />
 							<input type="text" placeholder="Last Name" />
@@ -31,7 +32,7 @@ export default function RegistrationPopUp() {
 							<input type="password" placeholder="Password" />
 							<button className="registerBtn">Register</button>
 						</form>
-						<div className="close-modal" onClick={toggleModal}>
+						<div className="close-modal" onClick={(e) => toggleModal(e)}>
 							<FontAwesomeIcon icon={faRectangleXmark} size="xl" />
 						</div>
 					</div>

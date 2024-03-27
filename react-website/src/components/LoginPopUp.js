@@ -20,9 +20,9 @@ export default function LoginPopUp() {
 					<div onClick={toggleModal} className="overlay"></div>
 
 					<div className="modal-content">
-						<head className="modal-header">
+						<div className="modal-header">
 							<h2>Log In</h2>
-						</head>
+						</div>
 						<form className="loginForm">
 							<input type="text" placeholder="Email" />
 							<input type="password" placeholder="Password" />
