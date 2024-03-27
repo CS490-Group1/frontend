@@ -1,41 +1,40 @@
 import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import "./LoginPopUp.css";
+import "./RegistrationPopUp.css";
 
-export default function LoginPopUp() {
+export default function RegistrationPopUp() {
 	const [modal, setModal] = useState(false);
-	const toggleModal = () => {
+	const toggleModal = (e) => {
 		setModal(!modal);
+		e.stopPropagation();
 	};
 
 	return (
 		<>
 			<button onClick={toggleModal} className="btn-modal">
-				Log In
+				Register
 			</button>
 
 			{modal && (
 				<div className="modal">
-					<div onClick={toggleModal} className="overlay"></div>
+					<div onClick={toggleModal} className="overlay2"></div>
 
 					<div className="modal-content">
 						<div className="modal-header">
-							<h2>Log In</h2>
+							<h2>Create Account</h2>
 						</div>
-						<form className="loginForm">
+						<form className="registrationForm">
+							<input type="text" placeholder="First Name" />
+							<input type="text" placeholder="Last Name" />
+							<input type="text" placeholder="Date Of Birth (MM/DD/YYYY)" />
 							<input type="text" placeholder="Email" />
 							<input type="password" placeholder="Password" />
-							<button className="loginBtn">Log In</button>
+							<button className="registerBtn">Register</button>
 						</form>
-						<div className="close-modal" onClick={toggleModal}>
+						<div className="close-modal" onClick={(e) => toggleModal(e)}>
 							<FontAwesomeIcon icon={faRectangleXmark} size="xl" />
 						</div>
-
-						{/* Alternative Close Button:
-						<button className="close-modal" onClick={toggleModal}>
-							X
-						</button> */}
 					</div>
 				</div>
 			)}

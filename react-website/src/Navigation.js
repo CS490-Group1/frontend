@@ -7,6 +7,9 @@ import logo from "./logo.png";
 const Navigation = () => {
 	const location = useLocation();
 
+	if (location.pathname === "/landing") {
+		return null;
+	}
 	return (
 		<nav>
 			<ul className="navbar">

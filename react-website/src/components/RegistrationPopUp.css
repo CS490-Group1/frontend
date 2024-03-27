@@ -16,7 +16,7 @@ body.active-modal {
 	justify-content: center;
 	color: rgba(234, 231, 220, 1);
 	font-family: Work Sans;
-	font-size: 24px;
+	font-size: 21px;
 	font-weight: 500;
 	line-height: 24px;
 
@@ -26,7 +26,8 @@ body.active-modal {
 }
 
 .modal,
-.overlay {
+.overlay2 {
+	z-index: 1000;
 	width: 100vw;
 	height: 100vh;
 	top: 0;
@@ -36,10 +37,11 @@ body.active-modal {
 	position: fixed;
 }
 
-.overlay {
+.overlay2 {
 	background: rgba(49, 49, 49, 0.8);
 }
 .modal-content {
+	z-index: 1000;
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -67,14 +69,14 @@ body.active-modal {
 	text-align: center;
 }
 
-.loginForm {
+.registrationForm {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 20px;
 }
 
-.loginForm input {
+.registrationForm input {
 	background-color: #eae7dc;
 	width: 80%;
 	padding: 10px;
@@ -100,7 +102,7 @@ body.active-modal {
 	}
 }
 
-.loginBtn {
+.registerBtn {
 	font-family: Inter;
 	border-radius: 100px;
 	margin-bottom: 20px;

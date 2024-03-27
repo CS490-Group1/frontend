@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import runner from "../cars/runner.png";
 import sequoia from "../cars/sequoia.png";
 import supra from "../cars/supra.png";
 import tundra from "../cars/tundra.png";
 import LoginPopUp from "../components/LoginPopUp";
+import RegistrationPopUp from "../components/RegistrationPopUp";
 import "./LandingPage.css";
 
 export default function LandingPage() {
@@ -18,11 +18,9 @@ export default function LandingPage() {
 				<img className="_03_4runner1" src={runner} alt="" />
 				<img className="_02_tundra1" src={tundra} alt="" />
 				<img className="_01_grSupra1" src={supra} alt="" />
-				<Link to="/_013registerpopup">
-					<div className="RegisterFrame">
-						<span className="RegisterText">Register</span>
-					</div>
-				</Link>
+				<div className="RegisterFrame">
+					<RegistrationPopUp />
+				</div>
 				<div className="LogInFrame">
 					<LoginPopUp />
 				</div>
