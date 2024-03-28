@@ -102,7 +102,23 @@ body.active-modal {
 	}
 }
 
-.registerBtn {
+.datePicker,
+.datePicker > div.react-datepicker-wrapper,
+.datePicker
+	> div
+	> div.react-datepicker__input-container
+	.datePicker
+	> div
+	> div.react-datepicker__input-container
+	input {
+	z-index: 1000;
+	width: 100%;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* .registerBtn {
 	font-family: Inter;
 	border-radius: 100px;
 	margin-bottom: 20px;
@@ -116,7 +132,7 @@ body.active-modal {
 	&:active {
 		background-color: #d8c3a5;
 	}
-}
+} */
 
 .close-modal {
 	position: absolute;
