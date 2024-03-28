@@ -141,15 +141,18 @@ export default function RegistrationPopUp() {
 											phone,
 										}),
 									});
-									console.log(response);
 									if (response.ok) {
 										setTimeout(() => {
 											next(true, "Created!");
 										}, 1000);
+										setSuccess(true);
 									} else {
 										setTimeout(() => {
-											next(false, response.headers.get("error"));
+											next(false, response.get("statusText"));
 										}, 1000);
+									}
+									if (success) {
+										// if registration was successful, redirect user to homepage.
 									}
 								}}
 							>
